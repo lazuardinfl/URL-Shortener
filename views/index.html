@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>URL Shortener</title>
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>URL Shortener</h1>
+    <hr />
+    <main>
+      <section>
+        <form action="api/shorturl" method="POST">
+          <fieldset>
+            <legend>URL Shortener</legend>
+            <label for="url_input">URL:</label>
+            <input id="url_input" type="text" name="url" placeholder="https://www.google.com/" />
+            <input type="submit" value="Shorten" />
+          </fieldset>
+        </form>
+      </section>
+      <h3>Usage:</h3>
+      <a href="https://url-shortener.lazuardi.repl.co/api/shorturl/3">[base_url]/api/shorturl/3
+      </a>
+      <h3>Redirect to:</h3>
+      <p>https://www.youtube.com/</p>
+    </main>
+  </body>
+</html>
